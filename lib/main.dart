@@ -1,5 +1,3 @@
-import 'dart:html' as prefix0;
-
 import 'package:flutter_web/material.dart';
 
 void main() => runApp(MyApp());
@@ -8,6 +6,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: new Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea(
@@ -17,11 +16,13 @@ class MyApp extends StatelessWidget {
             children: <Widget>[
               new CircleAvatar(
                 radius: 100.0,
-                backgroundImage: new NetworkImage('https://scontent.fdel8-1.fna.fbcdn.net/v/t1.0-9/fr/cp0/e15/q65/59343055_1522876961181111_1849325935979921408_n.jpg?_nc_cat=107&efg=eyJpIjoiYiJ9&_nc_ht=scontent.fdel8-1.fna&oh=ad32d89264e606fc022d9f5eb28031d4&oe=5D5EAD00'),
+                backgroundColor: Colors.white,
+                backgroundImage: NetworkImage('https://cdn.pixabay.com/photo/2016/10/25/18/27/unknown-1769656_960_720.png'),
               ),
               Text(
               'Saksham Mathur',
               style: new TextStyle(
+                fontFamily: 'Pacifico',
                 fontSize: 50.0,
                 fontWeight: FontWeight.bold,
                 color: Colors.blueAccent,
@@ -31,6 +32,7 @@ class MyApp extends StatelessWidget {
                 'Developer',
                 style: new TextStyle(
                   fontSize: 50.0,
+                  fontFamily: 'Source-Sans-Pro',
                   fontWeight: FontWeight.normal,
                   color: Colors.red,
                 ),
